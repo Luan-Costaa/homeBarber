@@ -115,7 +115,7 @@
         .container-mapa{
             width: 100%;
             max-width: 500px;
-            height: 30vh;
+            height: 35vh;
             padding: 15px;
             margin-bottom: 40px ;
         }
@@ -125,16 +125,21 @@
             max-width: 500px;
             margin-bottom: 15px;
         }
-        .container_btn_fixed{
-            position: fixed;
-            bottom: 10px;
-            width: 100%;
-            max-width: 400px;
-            color: white;
-            
+        .container_btn_fixed{           
             display: flex;
             justify-content: center;
             align-items: center;
+            color: white;
+            background-color: rgb(39, 39, 181);
+        }
+        .container_btn{
+            position: fixed;
+            bottom: 0px;
+            width: 100%;   
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding: 10px;
         }
         .container_btn_fixed span {
             margin-left: 10px;
@@ -236,10 +241,12 @@
             </div>
         </div>
 
-        <button class="container_btn_fixed btn btn-primary">
-            <i class="material-icons">calendar_today</i>
-            <span>Agendar Horário</span>
-        </button>
+        <div class="container_btn">
+            <button class="container_btn_fixed btn ">
+                <i class="material-icons">edit_calendar</i>
+                <span>Agendar Horário</span>
+            </button>
+        </div>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
