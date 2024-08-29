@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Garantindo que padding e bordas sejam incluídos nas dimensões dos elementos */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #FFFFFF; 
+            margin: 0;
+            padding: 0;
+            width: 100%; /* Garantindo que a largura seja 100% */
+            overflow-x: hidden;
+        }
+
+        header {
+            margin: 0;
+            padding: 0;
+        }
+
+        header .container_header, header ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permitir que os itens se ajustem em telas menores */
+            width: 100%; /* Garantindo que o container não ultrapasse a largura da tela */
+        }
+
+        header img {
+            max-width: 300px !important;
+            height: auto;
+            margin-left: -10px;
+        }
+
+        h4{
+            color: darkgrey;
+            text-decoration: underline;
+        }
+
+        header ul {
+            padding: 0; /* Remover padding padrão da lista */
+        }
+
+        header ul li {
+            margin: 10px; /* Ajustando margem para telas menores */
+            
+        }
+
+        ul li{
+            list-style: none;
+        }
+
+        header ul li a {
+            color: #3030ec;
+            text-decoration: none;
+        }
+        header ul li a:hover {
+            color: red;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .container_body{
+            width: 100%;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container_interno{
+            
+            margin: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container_info{
+            width: 100%;
+            max-width: 500px;
+        }
+        .container_info ul {
+            padding-left: 0px;
+        }
+        .container_info .item-comum {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container_info .item-comum p{
+            margin: 2px 10PX;
+            color: darkgray;
+        }
+        .title_list{
+            border-left: 2px solid red;
+            list-style: none;
+            font-size: 16px;
+            padding-left: 5px;
+            font-weight: 600;
+            margin-bottom:7px;
+            margin-top: 12px;
+        }
+        .container-mapa{
+            width: 100%;
+            max-width: 500px;
+            height: 30vh;
+            padding: 15px;
+        }
+        .container_carousel{
+            background-color: rgb(82, 82, 82);
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <img src="logo.jpeg" alt="logo" class="img-fluid rounded-circle">
+        </div>
+        <!--div class="container_header">
+            <ul>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Localização</a></li>
+                <li><a href="">Agendar</a></li>
+            </ul>
+        </div-->
+    </header> 
+
+    
+
+    <div class="container container_body">
+        <div class="container_carousel">
+            <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExample" data-slide-to="1"></li>
+                  <li data-target="#carouselExample" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                      <h3 style="color: white;">Primeiro Slide</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px; ">
+                      <h3 style="color: white;">Segundo Slide</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px; ">
+                      <h3 style="color: white;">Terceiro Slide</h3>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+        </div>
+
+
+        <div class="container_interno">
+            <h4>Serviços</h4>
+            <div class="container_info">
+                <ul>
+                    <li class="title_list">Cortes</li>
+                    <li class="item-comum">
+                        <p>Corte Degradê</p>
+                        <p>R$ 35,00</p>
+                    </li>
+                    <li class="item-comum">
+                        <p>Corte Simples</p>
+                        <p>R$ 30,00</p>
+                    </li>
+                    <li class="item-comum">
+                        <p>Corte Maquina</p>
+                        <p>R$ 25,00</p>
+                    </li>
+
+                    <li class="title_list">Barbas</li>
+                    <li class="item-comum">
+                        <p>Barba Desenhada</p>
+                        <p>R$ 30,00</p>
+                    </li>
+                    <li class="item-comum">
+                        <p>Barba Simples</p>
+                        <p>R$ 25,00</p>
+                    </li>
+                    <li class="item-comum">
+                        <p>Remoção</p>
+                        <p>R$ 20,00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container_interno">
+            <h4>Localização</h4>
+            <div class="container-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1293.128639319643!2d-46.779040370200555!3d-23.549756295832793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff7072fceb57%3A0xf8461f110be53df6!2sAv.%20Monte%20Ararat%2C%2057%20-%20Bela%20Vista%2C%20Osasco%20-%20SP%2C%2006070-170!5e0!3m2!1spt-BR!2sbr!4v1724892626040!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
